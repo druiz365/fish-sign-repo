@@ -28,19 +28,25 @@
 - Player-facing feedback for failed attempts is planned but not yet implemented
 
 ---
+## Help Perform Tasks
+- Go to the [Kanban](https://github.com/users/druiz365/projects/3/views/1)
+- Pick a task in either "Backlog" or "Ready"
+- Assign yourself to the task and move it to "In Progress"
+---
+
 
 ## Setup and Run Instructions
 
 ### Requirements
 - Unity 6000.0.34f1
 - Webcam access enabled
-- Sign Language Recognizer dependencies installed
+- GitHub LFS
 
 ### Project Setup
 1. Clone the repository
 2. Install Unity 6000.0.34f1 with build support for your platform ([Guide](https://docs.google.com/document/d/1kK3lTXnQqNJA0RKhi0DkrnnzgsVWMNk-maNsgZ1DN-k/edit?tab=t.0))
 3. Open the project in Unity
-4. Install the SLR package ([Tutorial](https://www.youtube.com/watch?v=t_3k4wMvQxE))
+4. Run
 
 ### Running the Project
 1. Open the `StartScreen` scene from `Assets/Scenes`
