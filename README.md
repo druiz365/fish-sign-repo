@@ -55,9 +55,6 @@
 4. Use the mouse to control the fishing bobber
 5. Enable webcam-access if prompted
 6. Perform the prompted sign and press **spacebar** to submit
-
-> **Note:** The SLR camera view is currently very zoomed in due to a known issue.
-
 ---
 
 ## Toolkit Integration Summary
