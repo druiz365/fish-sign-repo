@@ -55,9 +55,6 @@
 4. Use the mouse to control the fishing bobber
 5. Enable webcam-access if prompted
 6. Perform the prompted sign and press **spacebar** to submit
-
-> **Note:** The SLR camera view is currently very zoomed in due to a known issue.
-
 ---
 
 ## Toolkit Integration Summary
@@ -69,7 +66,6 @@
 ---
 
 ## Common Issues / Known Bugs
-- SLR camera appears overly zoomed in
 - No explicit UI feedback for failed sign recognition
 - UI layout is not yet optimized and may feel cluttered
 
