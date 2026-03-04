@@ -69,7 +69,6 @@
 ---
 
 ## Common Issues / Known Bugs
-- SLR camera appears overly zoomed in
 - No explicit UI feedback for failed sign recognition
 - UI layout is not yet optimized and may feel cluttered
 
