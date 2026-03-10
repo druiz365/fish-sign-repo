@@ -13,8 +13,14 @@ public class ReelInSpawner : MonoBehaviour
     public Transform spawnPoint;          
     public float respawnDelay = 1.0f;
 
+    [Header("Finish Object")]
+    public GameObject doneObject;
+
     GameObject currentInstance;
     bool isRespawning;
+
+    int spriteIndex = 0;
+    bool finished = false;
 
     void Start()
     {
@@ -23,7 +29,7 @@ public class ReelInSpawner : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && !isRespawning)
+        if (Input.GetKeyDown(KeyCode.Space) && !isRespawning && !finished)
         {
             StartCoroutine(DespawnAndRespawn());
         }
@@ -50,23 +56,26 @@ public class ReelInSpawner : MonoBehaviour
     {
         if (!reelInPrefab) return;
 
+        if (spriteIndex >= possibleSprites.Length)
+        {
+            finished = true;
+
+            if (doneObject != null)
+                doneObject.SetActive(true);
+
+            return;
+        }
+
         Transform t = spawnPoint ? spawnPoint : transform;
         currentInstance = Instantiate(reelInPrefab, t.position, t.rotation);
 
-        // Choose sprite in spawner
-        Sprite chosen = ChooseRandomSprite();
+        Sprite chosen = possibleSprites[spriteIndex];
+        spriteIndex++;
 
-        // Apply to spawned instance
         var sr = currentInstance.GetComponent<SpriteRenderer>();
         if (sr != null && chosen != null)
         {
             sr.sprite = chosen;
         }
-    }
-
-    Sprite ChooseRandomSprite()
-    {
-        if (possibleSprites == null || possibleSprites.Length == 0) return null;
-        return possibleSprites[Random.Range(0, possibleSprites.Length)];
     }
 }

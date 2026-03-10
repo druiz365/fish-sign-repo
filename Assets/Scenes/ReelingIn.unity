@@ -511,8 +511,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ReelInSpawner
   reelInPrefab: {fileID: 2762253467502545691, guid: 5d9e4d61c6c284110a090da33b76b566, type: 3}
+  possibleSprites:
+  - {fileID: 635808264844335355, guid: 467ba8b22a8504d1392f55bfe256d4fc, type: 3}
+  - {fileID: -7501201644240826356, guid: b74955beeefa44762bfcaacd813a82a4, type: 3}
+  - {fileID: -5755410639089308127, guid: 6e1e7e53c5e0447c7a074bb4a51622ee, type: 3}
   spawnPoint: {fileID: 0}
   respawnDelay: 1
+  doneObject: {fileID: 0}
 --- !u!4 &1135907905
 Transform:
   m_ObjectHideFlags: 0
